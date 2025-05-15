@@ -1,4 +1,4 @@
-package kz.dzhumanov.sportshop.controller;
+package kz.dzhumanov.sportshop.controller.ui;
 
 import kz.dzhumanov.sportshop.model.Product;
 import kz.dzhumanov.sportshop.service.CartItemService;
@@ -47,6 +47,12 @@ public class PageController {
                             RedirectAttributes redirectAttributes) {
         cartItemService.addToCart(productId, quantity);
         redirectAttributes.addFlashAttribute("success", "✅ Товар добавлен в корзину");
+        return "redirect:/products";
+    }
+
+    @PostMapping("/cart/increase")
+    public String increaseToCart(@RequestParam Long productId, @RequestParam int quantity) {
+        cartItemService.addToCart(productId, quantity);
         return "redirect:/cart";
     }
 

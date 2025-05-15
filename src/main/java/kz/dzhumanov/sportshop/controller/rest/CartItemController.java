@@ -1,4 +1,4 @@
-package kz.dzhumanov.sportshop.controller;
+package kz.dzhumanov.sportshop.controller.rest;
 
 import jakarta.validation.Valid;
 import kz.dzhumanov.sportshop.dto.AddToCartRequest;

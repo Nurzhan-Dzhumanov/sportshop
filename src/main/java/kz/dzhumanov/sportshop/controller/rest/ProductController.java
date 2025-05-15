@@ -1,4 +1,4 @@
-package kz.dzhumanov.sportshop.controller;
+package kz.dzhumanov.sportshop.controller.rest;
 
 import kz.dzhumanov.sportshop.model.Product;
 import kz.dzhumanov.sportshop.service.ProductService;
