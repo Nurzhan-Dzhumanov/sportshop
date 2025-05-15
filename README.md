@@ -10,4 +10,4 @@
 - Spring Boot 3
 - Spring MVC (Thymeleaf)
 - Spring Data JPA
-- H2 (
+- H2 
